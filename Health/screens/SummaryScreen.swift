@@ -9,7 +9,18 @@ import SwiftUI
 
 struct SummaryScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                Section (header: Text("Hello")) {
+                    Favorites_Card()
+                    Favorites_Card()
+                    Favorites_Card()
+
+                }
+                .headerProminence(.increased)
+            }
+            .navigationTitle("Summary")
+        }
     }
 }
 
