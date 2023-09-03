@@ -14,6 +14,8 @@
 		C22DBE3A2AA4372B00CFCB06 /* SummaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DBE392AA4372B00CFCB06 /* SummaryScreen.swift */; };
 		C22DBE3C2AA4387A00CFCB06 /* SharingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DBE3B2AA4387A00CFCB06 /* SharingScreen.swift */; };
 		C22DBE3E2AA4388900CFCB06 /* BrowseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DBE3D2AA4388900CFCB06 /* BrowseScreen.swift */; };
+		C22DBE402AA43DA800CFCB06 /* Detail_Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DBE3F2AA43DA800CFCB06 /* Detail_Steps.swift */; };
+		C22DBE422AA440D100CFCB06 /* Favorites_Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DBE412AA440D100CFCB06 /* Favorites_Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		C22DBE392AA4372B00CFCB06 /* SummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryScreen.swift; sourceTree = "<group>"; };
 		C22DBE3B2AA4387A00CFCB06 /* SharingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingScreen.swift; sourceTree = "<group>"; };
 		C22DBE3D2AA4388900CFCB06 /* BrowseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseScreen.swift; sourceTree = "<group>"; };
+		C22DBE3F2AA43DA800CFCB06 /* Detail_Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail_Steps.swift; sourceTree = "<group>"; };
+		C22DBE412AA440D100CFCB06 /* Favorites_Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites_Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				C22DBE392AA4372B00CFCB06 /* SummaryScreen.swift */,
 				C22DBE3B2AA4387A00CFCB06 /* SharingScreen.swift */,
 				C22DBE3D2AA4388900CFCB06 /* BrowseScreen.swift */,
+				C22DBE3F2AA43DA800CFCB06 /* Detail_Steps.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 		C22DBE382AA4370D00CFCB06 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				C22DBE412AA440D100CFCB06 /* Favorites_Card.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -166,6 +172,8 @@
 				C22DBE3E2AA4388900CFCB06 /* BrowseScreen.swift in Sources */,
 				C22DBE2A2AA436DB00CFCB06 /* HealthApp.swift in Sources */,
 				C22DBE3C2AA4387A00CFCB06 /* SharingScreen.swift in Sources */,
+				C22DBE402AA43DA800CFCB06 /* Detail_Steps.swift in Sources */,
+				C22DBE422AA440D100CFCB06 /* Favorites_Card.swift in Sources */,
 				C22DBE3A2AA4372B00CFCB06 /* SummaryScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
