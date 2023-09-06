@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct favCard_Mini: View {
+    var imgName: String
+    var cardName: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct favCard_Mini_Previews: PreviewProvider {
-    static var previews: some View {
-        favCard_Mini()
+        NavigationLink {
+            SharingScreen()
+        } label: {
+            Image(imgName)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 24)
+            Text(cardName)
+                .font(.subheadline)
+        }
     }
 }

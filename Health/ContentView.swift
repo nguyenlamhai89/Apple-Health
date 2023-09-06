@@ -12,21 +12,21 @@ struct ContentView: View {
         TabView {
             SummaryScreen()
                 .tabItem {
-                    Image(systemName: "heart.fill")
-                    Text("Summary")
+    Image(systemName: "heart.fill")
+        Text("Summary")
                 }
-            SharingScreen()
+    SharingScreen()
                 .tabItem {
                     Image(systemName: "person.2.fill")
-                    Text("Sharing")
-                }
-            BrowseScreen()
-                .tabItem {
-                    Image(systemName: "rectangle.grid.2x2.fill")
-                    Text("Browse")
-                }
+                Text("Sharing")
         }
+        BrowseScreen()
+                .tabItem {
+            Image(systemName: "rectangle.grid.2x2.fill")
+                    Text("Browse")
     }
+        }
+      }
 }
 
 struct ContentView_Previews: PreviewProvider {

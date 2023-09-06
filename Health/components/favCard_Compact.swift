@@ -8,13 +8,44 @@
 import SwiftUI
 
 struct favCard_Compact: View {
+    var imgName: String
+    var cardName: String
+    var cardValue: Int
+    var titleValue: String
+    var accentColor: Color
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct favCard_Compact_Previews: PreviewProvider {
-    static var previews: some View {
-        favCard_Compact()
+        NavigationLink {
+            SharingScreen()
+        } label: {
+            VStack (alignment: .leading, spacing: 16) {
+                HStack {
+                    HStack {
+                        Image(systemName: imgName)
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(accentColor)
+                            .frame(width: 10)
+                        Text(cardName)
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                            .foregroundColor(accentColor)
+                    }
+                    Spacer()
+                    Text("13:51")
+                        .font(.footnote)
+                        .foregroundColor(Color.gray)
+                }
+                HStack (alignment: .firstTextBaseline) {
+                    Text("\(cardValue)")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                    Text(titleValue)
+                        .font(.footnote)
+                        .foregroundColor(Color.gray)
+                }
+            }
+            
+            
+        }
     }
 }
