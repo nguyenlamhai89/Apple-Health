@@ -26,6 +26,12 @@ struct SummaryScreen: View {
                 }
                 .headerProminence(.increased)
                 
+                // Highlights Section
+                Section(header: Text("Highlights")) {
+                    favCard_Medium(imgName: "drop.degreesign", cardName: "Water", accentColor: Color.green)
+                }
+                .headerProminence(.increased)
+                
                 
             }
             .listStyle(.insetGrouped)
