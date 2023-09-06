@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SummaryScreen: View {
+    @State private var isPresenting: Bool = false
     var body: some View {
         NavigationView {
             List {
@@ -36,6 +37,28 @@ struct SummaryScreen: View {
             }
             .listStyle(.insetGrouped)
             .navigationTitle("Summary")
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        print("Clicked")
+                        isPresenting.toggle()
+                    } label: {
+                        Image(systemName: "plus.circle")
+                    }
+                }
+            }
+            .sheet(isPresented: $isPresenting) {
+                Button {
+                    isPresenting.toggle()
+                } label: {
+                    Text("Back")
+                        .foregroundColor(Color.accentColor)
+                }
+
+                Image("cat_meme")
+                    .resizable()
+                    .scaledToFit()
+            }
         }
     }
 }
