@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct favCard_Medium: View {
+struct favCard_Medium1: View {
     var imgName: String
     var cardName: String
     var accentColor: Color

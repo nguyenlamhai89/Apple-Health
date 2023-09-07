@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SummaryScreen: View {
-    @State private var isPresenting: Bool = false
+    @State private var isShown: Bool = false
     var body: some View {
         NavigationView {
             List {
@@ -29,10 +29,10 @@ struct SummaryScreen: View {
                 
                 // Highlights Section
                 Section(header: Text("Highlights")) {
-                    favCard_Medium(imgName: "drop.degreesign", cardName: "Water", accentColor: Color.green)
+                    favCard_Medium1(imgName: "drop.degreesign", cardName: "Water", accentColor: Color.green)
+                    favCard_Medium2(imgName: "flame.fill", cardName: "Active Energy", accentColor: Color.red)
                 }
                 .headerProminence(.increased)
-                
                 
             }
             .listStyle(.insetGrouped)
@@ -41,15 +41,15 @@ struct SummaryScreen: View {
                 ToolbarItem {
                     Button {
                         print("Clicked")
-                        isPresenting.toggle()
+                        isShown.toggle()
                     } label: {
                         Image(systemName: "plus.circle")
                     }
                 }
             }
-            .sheet(isPresented: $isPresenting) {
+            .sheet(isPresented: $isShown) {
                 Button {
-                    isPresenting.toggle()
+                    isShown.toggle()
                 } label: {
                     Text("Back")
                         .foregroundColor(Color.accentColor)
