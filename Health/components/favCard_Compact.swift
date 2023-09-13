@@ -15,7 +15,7 @@ struct favCard_Compact: View {
     var accentColor: Color
     var body: some View {
         NavigationLink {
-            SharingScreen()
+            favoritesDetails()
         } label: {
             VStack (alignment: .leading, spacing: 16) {
                 HStack {

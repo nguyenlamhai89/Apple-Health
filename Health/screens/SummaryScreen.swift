@@ -13,7 +13,7 @@ struct SummaryScreen: View {
         NavigationView {
             List {
                 //Favorites Section
-                Section(header: Text("Favorites")) {
+                Section(header: Text("Hahaha")) {
                     favCard_Compact(imgName: "flame.fill", cardName: "Steps", cardValue: 515, titleValue: "steps", accentColor: Color.red)
                     favCard_Compact(imgName: "flame.fill", cardName: "Walking + Running Distance", cardValue: 1, titleValue: "km", accentColor: Color.red)
                     favCard_Compact(imgName: "drop.degreesign", cardName: "Water", cardValue: 750, titleValue: "mL", accentColor: Color.green)
